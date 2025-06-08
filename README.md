@@ -27,3 +27,17 @@ metagpt –-init-config
 
 ---------------------------------------------------------------------
 文件夹内是一个前端和后端进行交互的系统
+
+前端运行，确保已安装 Node.js：node --version     Node.js 下载地址：https://nodejs.org/
+
+安装前端依赖：cd frontend，           npm install
+
+配置环境变量：
+在 frontend 目录下创建一个 .env 文件，并添加以下内容：
+REACT_APP_API_BASE_URL=http://localhost:5000
+
+使用方法：
+
+启动服务器：python app.py
+
+启动前端：cd frontend，     npm start
