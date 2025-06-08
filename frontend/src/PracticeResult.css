@@ -1,0 +1,191 @@
+.practice-result-page {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  }
+  
+  .practice-result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #333;
+  }
+  
+  .practice-result-body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .practice-result-main {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .practice-result-question {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1890ff;
+  }
+  
+  .practice-result-content {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .practice-result-left {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .practice-result-right {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .practice-result-original,
+  .practice-result-ai {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .practice-result-original h3,
+  .practice-result-ai h3 {
+    color: #1890ff;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+  }
+  
+  .practice-result-original p,
+  .practice-result-ai p {
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap;
+  }
+  
+  .evaluation-scores {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .evaluation-scores h4 {
+    color: #1890ff;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+  
+  .score-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .score-item:last-child {
+    border-bottom: none;
+  }
+  
+  .score-item.total {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 2px solid #1890ff;
+    font-weight: bold;
+    color: #1890ff;
+  }
+  
+  .evaluation-feedback {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .evaluation-feedback h4 {
+    color: #1890ff;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+  
+  .evaluation-feedback p {
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap;
+  }
+  
+  .sample-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sample-btn:hover {
+    background: #40a9ff;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .practice-result-content {
+      flex-direction: column;
+    }
+    
+    .practice-result-left,
+    .practice-result-right {
+      width: 100%;
+    }
+    
+    .practice-result-main {
+      padding: 16px;
+    }
+  }
+  
+  .feedback-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .feedback-item h5 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  
+  .feedback-item p {
+    margin: 0;
+    color: #666;
+    line-height: 1.4;
+  }

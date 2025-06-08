@@ -1,0 +1,120 @@
+.practice-sample-page {
+    min-height: 100vh;
+    background: #f7f8fa;
+    font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  }
+  
+  .practice-sample-header {
+    font-size: 1.08rem;
+    font-weight: 500;
+    padding: 18px 40px 0 40px;
+    color: #222;
+    background: #fffbe9;
+    border-bottom: 1px solid #f0e6c7;
+  }
+  
+  .practice-sample-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0 0 0;
+    min-height: 600px;
+  }
+  
+  .practice-sample-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-right: 32px;
+  }
+  
+  .practice-sample-sidebar button {
+    width: 100px;
+    height: 54px;
+    background: #f7f8fa;
+    color: #1ecb6b;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(30,203,107,0.08);
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+  }
+  
+  .practice-sample-sidebar button.active,
+  .practice-sample-sidebar button:hover {
+    background: #1ecb6b;
+    color: #fff;
+  }
+  
+  .practice-sample-sidebar .end-btn {
+    background: #1ecb6b;
+    color: #fff;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(30,203,107,0.12);
+    transition: background 0.2s;
+  }
+  .practice-sample-sidebar .end-btn:hover {
+    background: #0e9e4a;
+  }
+  
+  .practice-sample-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 900px;
+    max-width: 90vw;
+  }
+  
+  .practice-sample-question {
+    background: #fff;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    padding: 36px 32px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    min-height: 80px;
+    color: #222;
+  }
+  
+  .practice-sample-original,
+  .practice-sample-sample {
+    background: #fff;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    padding: 36px 32px;
+    min-height: 120px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #222;
+  }
+  .practice-sample-sample {
+    border-radius: 32px;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 900px) {
+    .practice-sample-body {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 24px 0 0 0;
+    }
+    .practice-sample-sidebar {
+      flex-direction: row;
+      margin: 0 0 18px 0;
+      gap: 12px;
+      justify-content: center;
+    }
+    .practice-sample-main {
+      width: 100%;
+      max-width: 100vw;
+      padding: 0 2vw;
+    }
+  }
